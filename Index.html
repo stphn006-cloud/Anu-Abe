@@ -3,271 +3,276 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Anu &amp; Abe — December 8, 2026</title>
-  <meta name="description" content="You are invited to the wedding of Anu and Abe — December 8, 2026 at Fontera Garden Suites"/>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@200;300;400&display=swap" rel="stylesheet"/>
+  <title>Anu &amp; Abe &mdash; December 8, 2026</title>
+  <meta name="description" content="You are invited to the wedding of Anu and Abe, December 8, 2026 at Fontera Garden Suites"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400;1,600&family=Jost:wght@200;300;400&display=swap" rel="stylesheet"/>
   <style>
-    :root {
-      --army:#4a5c3a; --army-mid:#5e7248; --army-light:#8a9e72; --army-glow:#6b7f56;
-      --khaki:#c8b97a; --khaki-light:#e0d4a0; --khaki-pale:#f0e9cc;
-      --khaki-bg:#f7f2e3; --khaki-mid:#dfd4a8;
-      --ink:#1e2018; --muted:#4a4940;
+    :root{
+      --army:#4a5c3a; --army-mid:#5e7248; --army-light:#7a9060;
+      --khaki:#c8b97a; --khaki-light:#dfd4a0; --khaki-pale:#f0e9cc;
+      --bg:#f7f2e3; --ink:#1a1c15; --body:#2e3028; --sub:#3e3e34;
     }
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
-    body{background:var(--khaki-bg);color:var(--ink);font-family:'Jost',sans-serif;font-weight:300;overflow-x:hidden}
+    body{background:var(--bg);color:var(--body);font-family:'Jost',sans-serif;font-weight:300;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 
-    nav{
-      position:fixed;top:0;left:0;right:0;z-index:100;
-      display:flex;align-items:center;justify-content:center;gap:40px;padding:18px 24px;
-      background:rgba(247,242,227,0.88);backdrop-filter:blur(10px);
-      border-bottom:1px solid rgba(200,185,122,0.35);
-    }
-    nav a{font-size:0.62rem;letter-spacing:0.38em;text-transform:uppercase;color:#4a4940;text-decoration:none;transition:color 0.25s}
+    /* NAV */
+    nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:center;gap:40px;padding:16px 24px;background:rgba(247,242,227,.93);backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,185,122,.3)}
+    nav a{font-size:.62rem;letter-spacing:.38em;text-transform:uppercase;color:var(--sub);text-decoration:none;transition:color .25s}
     nav a:hover{color:var(--army)}
 
-    .hero{
-      min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
-      position:relative;padding:100px 24px 80px;
-      background:linear-gradient(150deg,var(--khaki-bg) 0%,var(--khaki-pale) 50%,#dde3cc 100%);
-      overflow:hidden;
-    }
+    /* HERO */
+    .hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;padding:110px 24px 90px;background:linear-gradient(148deg,var(--bg) 0%,var(--khaki-pale) 48%,#dae0cc 100%);overflow:hidden}
     .hero::before,.hero::after{content:'';position:absolute;border-radius:50%;pointer-events:none}
-    .hero::before{width:600px;height:600px;background:radial-gradient(circle,rgba(74,92,58,0.12) 0%,transparent 70%);top:-180px;left:-200px}
-    .hero::after{width:450px;height:450px;background:radial-gradient(circle,rgba(200,185,122,0.18) 0%,transparent 70%);bottom:-120px;right:-120px}
-
-    .botanical{position:absolute;pointer-events:none;opacity:0.25}
-    .botanical.tr{top:0;right:0;width:260px}
-    .botanical.bl{bottom:0;left:0;width:200px;transform:rotate(180deg)}
-
+    .hero::before{width:580px;height:580px;background:radial-gradient(circle,rgba(74,92,58,.13) 0%,transparent 68%);top:-160px;left:-180px}
+    .hero::after{width:420px;height:420px;background:radial-gradient(circle,rgba(200,185,122,.16) 0%,transparent 68%);bottom:-110px;right:-110px}
+    .bot{position:absolute;pointer-events:none;opacity:.22}
+    .bot-tr{top:0;right:0;width:250px}
+    .bot-bl{bottom:0;left:0;width:190px;transform:rotate(180deg)}
     .hero-inner{position:relative;z-index:2;text-align:center;max-width:720px}
-    .eyebrow{font-weight:200;letter-spacing:0.48em;font-size:0.67rem;text-transform:uppercase;color:var(--army-light);margin-bottom:32px;opacity:0;animation:fadeUp 1s ease 0.2s forwards}
-    .names{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(3.8rem,11vw,7rem);line-height:0.88;color:var(--ink);opacity:0;animation:fadeUp 1s ease 0.5s forwards}
-    .amp{display:block;font-style:italic;color:var(--army);font-size:clamp(2.8rem,8vw,5.2rem);line-height:1.15;margin:8px 0}
-
-    .ornament{display:flex;align-items:center;justify-content:center;gap:16px;margin:38px auto;opacity:0;animation:fadeUp 1s ease 0.8s forwards}
-    .ornament-line{flex:1;max-width:80px;height:1px;background:linear-gradient(90deg,transparent,var(--khaki))}
-    .ornament-line.r{background:linear-gradient(90deg,var(--khaki),transparent)}
-    .ornament-diamond{width:6px;height:6px;background:var(--khaki);transform:rotate(45deg)}
-
+    .eyebrow{font-weight:200;letter-spacing:.46em;font-size:.67rem;text-transform:uppercase;color:var(--army-light);margin-bottom:30px;opacity:0;animation:fadeUp 1s ease .2s forwards}
+    .names{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(3.6rem,10.5vw,6.8rem);line-height:.88;color:var(--ink);opacity:0;animation:fadeUp 1s ease .5s forwards}
+    .amp{display:block;font-style:italic;color:var(--army);font-size:clamp(2.6rem,7.5vw,5rem);line-height:1.15;margin:6px 0}
+    .ornament{display:flex;align-items:center;justify-content:center;gap:14px;margin:36px auto;opacity:0;animation:fadeUp 1s ease .8s forwards}
+    .orn-l{flex:1;max-width:72px;height:1px;background:linear-gradient(90deg,transparent,var(--khaki))}
+    .orn-r{flex:1;max-width:72px;height:1px;background:linear-gradient(90deg,var(--khaki),transparent)}
+    .orn-d{width:6px;height:6px;background:var(--khaki);transform:rotate(45deg)}
     .hero-date{opacity:0;animation:fadeUp 1s ease 1s forwards}
-    .hero-date-main{font-family:'Cormorant Garamond',serif;font-size:clamp(1.2rem,3vw,1.7rem);letter-spacing:0.08em}
-    .hero-date-sub{margin-top:8px;font-size:0.72rem;letter-spacing:0.32em;text-transform:uppercase;color:#4a4940}
-
+    .date-main{font-family:'Cormorant Garamond',serif;font-size:clamp(1.15rem,2.8vw,1.65rem);letter-spacing:.08em;color:var(--ink)}
+    .date-sub{margin-top:8px;font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--sub)}
     .countdown{display:flex;gap:8px;justify-content:center;margin-top:40px;opacity:0;animation:fadeUp 1s ease 1.2s forwards}
-    .cd-block{background:rgba(255,255,255,0.45);border:1px solid var(--khaki-light);padding:14px 18px;min-width:68px;text-align:center}
-    .cd-num{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:400;line-height:1;color:var(--army)}
-    .cd-label{font-size:0.55rem;letter-spacing:0.3em;text-transform:uppercase;color:#4a4940;margin-top:4px}
-
+    .cd{background:rgba(255,255,255,.46);border:1px solid var(--khaki-light);padding:13px 16px;min-width:66px;text-align:center}
+    .cd-n{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:400;line-height:1;color:var(--army)}
+    .cd-l{font-size:.52rem;letter-spacing:.28em;text-transform:uppercase;color:var(--sub);margin-top:4px}
     .hero-cta{margin-top:48px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap;opacity:0;animation:fadeUp 1s ease 1.4s forwards}
-    .btn{display:inline-block;padding:13px 40px;font-family:'Jost',sans-serif;font-weight:300;font-size:0.72rem;letter-spacing:0.32em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background 0.3s,color 0.3s,border-color 0.3s;border:1px solid}
-    .btn-primary{background:var(--army);color:#fff;border-color:var(--army)}
-    .btn-primary:hover{background:var(--army-mid);border-color:var(--army-mid)}
-    .btn-ghost{background:transparent;color:var(--army);border-color:var(--army)}
-    .btn-ghost:hover{background:var(--army);color:#fff}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 38px;border:1px solid;font-family:'Jost',sans-serif;font-weight:300;font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;text-decoration:none;cursor:pointer;background:transparent;transition:background .3s,color .3s,border-color .3s}
+    .btn-fill{background:var(--army);color:#fff;border-color:var(--army)}
+    .btn-fill:hover{background:var(--army-mid);border-color:var(--army-mid)}
+    .btn-outline{color:var(--army);border-color:var(--army)}
+    .btn-outline:hover{background:var(--army);color:#fff}
+    .scroll-cue{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:7px;opacity:0;animation:fadeIn 1s ease 2.3s forwards}
+    .scroll-cue span{font-size:.57rem;letter-spacing:.34em;text-transform:uppercase;color:var(--sub)}
+    .scroll-line{width:1px;height:38px;background:linear-gradient(to bottom,var(--khaki),transparent);animation:pulseLine 1.9s ease-in-out infinite}
 
-    .scroll-cue{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;opacity:0;animation:fadeIn 1s ease 2.2s forwards}
-    .scroll-cue span{font-size:0.58rem;letter-spacing:0.35em;text-transform:uppercase;color:var(--muted)}
-    .scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,var(--khaki),transparent);animation:pulseDown 1.8s ease-in-out infinite}
-
+    /* SHARED SECTION */
     section{position:relative}
-    .section-rule{position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--khaki),transparent)}
-    .section-title{text-align:center;font-size:0.64rem;letter-spacing:0.45em;text-transform:uppercase;color:var(--army-light);margin-bottom:64px}
+    .s-rule{position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--khaki),transparent)}
+    .s-label{text-align:center;font-size:.63rem;letter-spacing:.44em;text-transform:uppercase;color:var(--army-light);margin-bottom:60px}
 
-    .verse{padding:90px 24px;background:linear-gradient(160deg,#e5ebda 0%,var(--khaki-bg) 100%);text-align:center}
-    .verse-text{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.3rem,3.5vw,1.9rem);font-weight:400;color:#1e2018;max-width:680px;margin:0 auto;line-height:1.7}
-    .verse-ref{margin-top:20px;font-size:0.65rem;letter-spacing:0.35em;text-transform:uppercase;color:var(--army-light)}
+    /* VERSE */
+    .verse{padding:88px 24px;background:linear-gradient(158deg,#e2e9d5 0%,var(--bg) 100%);text-align:center}
+    .verse-text{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.25rem,3.2vw,1.85rem);font-weight:400;color:var(--ink);max-width:680px;margin:0 auto;line-height:1.72}
+    .verse-ref{margin-top:18px;font-size:.64rem;letter-spacing:.36em;text-transform:uppercase;color:var(--army-light)}
 
-    .details{background:var(--khaki-pale);padding:100px 24px}
-    .details-grid{max-width:920px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:52px 28px;text-align:center}
-    .detail-card{display:flex;flex-direction:column;align-items:center;gap:16px}
-    .detail-icon-wrap{width:60px;height:60px;border-radius:50%;border:1px solid var(--khaki-light);display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.5)}
-    .detail-icon{width:26px;height:26px}
-    .detail-label{font-size:0.62rem;letter-spacing:0.38em;text-transform:uppercase;color:var(--army-light)}
-    .detail-value{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:400;line-height:1.3;color:var(--ink)}
-    .detail-note{font-size:0.76rem;color:#4a4940;line-height:1.6}
+    /* DETAILS */
+    .details{background:var(--khaki-pale);padding:96px 24px}
+    .d-grid{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:50px 24px;text-align:center}
+    .d-card{display:flex;flex-direction:column;align-items:center;gap:14px}
+    .d-ring{width:58px;height:58px;border-radius:50%;border:1px solid var(--khaki-light);display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.5)}
+    .d-icon{width:26px;height:26px}
+    .d-lbl{font-size:.61rem;letter-spacing:.37em;text-transform:uppercase;color:var(--army-light)}
+    .d-val{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:400;line-height:1.32;color:var(--ink)}
+    .d-note{font-size:.76rem;color:var(--sub);line-height:1.6}
 
-    .policy-badge{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--khaki-light);padding:12px 24px;background:rgba(255,255,255,0.55);margin-bottom:48px}
-    .policy-dot{width:8px;height:8px;border-radius:50%;background:var(--army);flex-shrink:0}
-    .policy-text{font-size:0.72rem;letter-spacing:0.1em;color:var(--ink)}
+    /* RSVP */
+    .rsvp{padding:96px 24px;background:linear-gradient(180deg,var(--bg) 0%,#dae0cc 100%);text-align:center}
+    .rsvp-head{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:clamp(2rem,5.5vw,3rem);color:var(--ink);margin-bottom:10px}
+    .rsvp-sub{font-size:.82rem;color:var(--sub);max-width:400px;margin:0 auto 32px;line-height:1.9}
+    .rsvp-sub strong{color:var(--army);font-weight:400}
+    .pass-badge{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--khaki-light);padding:11px 22px;background:rgba(255,255,255,.55);margin-bottom:44px}
+    .pass-dot{width:8px;height:8px;border-radius:50%;background:var(--army);flex-shrink:0}
+    .pass-txt{font-size:.72rem;letter-spacing:.08em;color:var(--ink)}
+    .pass-txt strong{color:var(--army);font-weight:400}
+    .rsvp-card{max-width:500px;margin:0 auto;background:rgba(255,255,255,.58);border:1px solid var(--khaki-light);padding:52px 44px;backdrop-filter:blur(8px);display:flex;flex-direction:column;align-items:center;gap:26px}
+    .rsvp-icon{width:62px;height:62px;border-radius:50%;background:linear-gradient(135deg,var(--army) 0%,var(--army-mid) 100%);display:flex;align-items:center;justify-content:center}
+    .rsvp-card-head{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.55rem;font-weight:400;color:var(--ink)}
+    .rsvp-card-body{font-size:.8rem;color:var(--sub);line-height:1.9;max-width:320px;text-align:center}
+    .info-box{display:flex;align-items:flex-start;gap:10px;background:rgba(74,92,58,.07);border-left:2px solid var(--army);padding:12px 16px;text-align:left;width:100%}
+    .info-box p{font-size:.76rem;line-height:1.68;color:var(--ink)}
+    .info-box strong{color:var(--army);font-weight:400}
+    .btn-rsvp{display:inline-flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:16px 40px;background:var(--army);color:#fff;border:none;font-family:'Jost',sans-serif;font-weight:300;font-size:.74rem;letter-spacing:.3em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background .3s}
+    .btn-rsvp:hover{background:var(--army-mid)}
 
-    .rsvp-section{padding:100px 24px;background:linear-gradient(180deg,var(--khaki-bg) 0%,#dde4cd 100%);text-align:center}
-    .rsvp-heading{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,6vw,3.2rem);font-weight:300;font-style:italic;color:var(--ink);margin-bottom:12px}
-    .rsvp-sub{font-size:0.82rem;color:#4a4940;max-width:420px;margin:0 auto 36px;line-height:1.9}
-
-    .rsvp-card{max-width:520px;margin:0 auto;background:rgba(255,255,255,0.55);border:1px solid var(--khaki-light);padding:56px 44px;backdrop-filter:blur(6px);display:flex;flex-direction:column;align-items:center;gap:28px}
-    .rsvp-card-icon{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--army) 0%,var(--army-mid) 100%);display:flex;align-items:center;justify-content:center}
-    .rsvp-card-heading{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:400;font-style:italic;color:var(--ink)}
-    .rsvp-card-body{font-size:0.8rem;color:#4a4940;line-height:1.9;max-width:340px;text-align:center}
-
-    .pass-note{display:flex;align-items:flex-start;gap:10px;background:rgba(74,92,58,0.07);border-left:2px solid var(--army);padding:12px 16px;text-align:left;width:100%}
-    .pass-note p{font-size:0.76rem;line-height:1.65;color:var(--ink)}
-    .pass-note strong{color:var(--army);font-weight:400}
-
-    .btn-rsvp-google{display:inline-flex;align-items:center;gap:10px;background:var(--army);color:#fff;border:none;padding:16px 44px;font-family:'Jost',sans-serif;font-weight:300;font-size:0.75rem;letter-spacing:0.32em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background 0.3s;width:100%;justify-content:center}
-    .btn-rsvp-google:hover{background:var(--army-mid)}
-
+    /* FOOTER */
     footer{background:var(--army);color:var(--khaki-pale);text-align:center;padding:52px 24px}
-    .footer-monogram{font-family:'Cormorant Garamond',serif;font-size:2rem;font-style:italic;font-weight:300;letter-spacing:0.08em;margin-bottom:12px;color:var(--khaki-light)}
-    .footer-sub{font-size:0.62rem;letter-spacing:0.35em;text-transform:uppercase;color:rgba(200,185,122,0.6)}
-    .footer-rule{width:40px;height:1px;background:var(--khaki);margin:20px auto}
-    .footer-quote{font-size:0.76rem;color:rgba(240,233,204,0.55);font-style:italic;letter-spacing:0.04em}
+    .ft-mono{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:2rem;font-weight:300;letter-spacing:.08em;color:var(--khaki-light);margin-bottom:10px}
+    .ft-sub{font-size:.61rem;letter-spacing:.34em;text-transform:uppercase;color:rgba(200,185,122,.6)}
+    .ft-rule{width:38px;height:1px;background:var(--khaki);margin:18px auto}
+    .ft-quote{font-size:.75rem;color:rgba(240,233,204,.5);font-style:italic}
 
-    @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+    /* ANIMATIONS */
+    @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
     @keyframes fadeIn{from{opacity:0}to{opacity:1}}
-    @keyframes pulseDown{0%,100%{opacity:1}50%{opacity:0.3}}
-    .reveal{opacity:0;transform:translateY(28px);transition:opacity 0.7s ease,transform 0.7s ease}
-    .reveal.visible{opacity:1;transform:translateY(0)}
+    @keyframes pulseLine{0%,100%{opacity:1}50%{opacity:.25}}
+    .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+    .reveal.in{opacity:1;transform:none}
 
-    @media(max-width:540px){.rsvp-card{padding:36px 22px}nav{gap:22px}.cd-block{min-width:56px;padding:12px 10px}}
+    @media(max-width:520px){nav{gap:20px}.rsvp-card{padding:36px 20px}.cd{min-width:54px;padding:11px 10px}}
   </style>
 </head>
 <body>
 
+<!-- NAV -->
 <nav>
   <a href="#top">Home</a>
   <a href="#details">Details</a>
   <a href="#rsvp">RSVP</a>
 </nav>
 
+<!-- HERO -->
 <section class="hero" id="top">
-  <svg class="botanical tr" viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M260 0 C200 40,160 100,140 180 C120 240,130 260,110 260" stroke="#8a9e72" stroke-width="1" fill="none"/>
-    <path d="M260 0 C220 30,200 80,200 140 C200 200,180 240,160 260" stroke="#8a9e72" stroke-width="0.6" fill="none"/>
-    <ellipse cx="190" cy="60" rx="28" ry="13" fill="#5e7248" transform="rotate(-40 190 60)"/>
-    <ellipse cx="155" cy="105" rx="22" ry="10" fill="#4a5c3a" transform="rotate(-55 155 105)"/>
-    <ellipse cx="210" cy="120" rx="18" ry="8" fill="#6b7f56" transform="rotate(-20 210 120)"/>
-    <ellipse cx="130" cy="158" rx="24" ry="10" fill="#5e7248" transform="rotate(-65 130 158)"/>
-    <ellipse cx="175" cy="178" rx="16" ry="7" fill="#4a5c3a" transform="rotate(-30 175 178)"/>
-    <circle cx="215" cy="55" r="3.5" fill="#c8b97a" opacity="0.55"/>
-    <circle cx="145" cy="95" r="3" fill="#c8b97a" opacity="0.4"/>
-    <circle cx="160" cy="200" r="3" fill="#c8b97a" opacity="0.4"/>
+
+  <svg class="bot bot-tr" viewBox="0 0 250 250" fill="none" aria-hidden="true">
+    <path d="M250 0C190 38,150 96,132 172c-18 56-8 78-28 78" stroke="#7a9060" stroke-width="1" fill="none"/>
+    <path d="M250 0C212 28,192 76,190 134c0 58-20 96-44 116" stroke="#7a9060" stroke-width=".6" fill="none"/>
+    <ellipse cx="184" cy="56"  rx="27" ry="12" fill="#4a5c3a" transform="rotate(-42 184 56)"/>
+    <ellipse cx="148" cy="100" rx="21" ry="10" fill="#5e7248" transform="rotate(-57 148 100)"/>
+    <ellipse cx="204" cy="114" rx="17" ry="8"  fill="#4a5c3a" transform="rotate(-22 204 114)"/>
+    <ellipse cx="124" cy="152" rx="23" ry="10" fill="#5e7248" transform="rotate(-66 124 152)"/>
+    <ellipse cx="170" cy="170" rx="15" ry="7"  fill="#4a5c3a" transform="rotate(-32 170 170)"/>
+    <circle cx="210" cy="50"  r="3.5" fill="#c8b97a" opacity=".55"/>
+    <circle cx="140" cy="90"  r="3"   fill="#c8b97a" opacity=".4"/>
+    <circle cx="155" cy="194" r="3"   fill="#c8b97a" opacity=".4"/>
   </svg>
-  <svg class="botanical bl" viewBox="0 0 200 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 260 C40 200,80 160,160 140 C200 128,200 120,200 100" stroke="#8a9e72" stroke-width="1" fill="none"/>
-    <ellipse cx="55" cy="195" rx="26" ry="11" fill="#5e7248" transform="rotate(40 55 195)"/>
-    <ellipse cx="95" cy="165" rx="20" ry="9" fill="#4a5c3a" transform="rotate(25 95 165)"/>
-    <ellipse cx="40" cy="155" rx="18" ry="8" fill="#6b7f56" transform="rotate(55 40 155)"/>
-    <circle cx="60" cy="210" r="3.5" fill="#c8b97a" opacity="0.45"/>
-    <circle cx="110" cy="148" r="3" fill="#c8b97a" opacity="0.4"/>
+  <svg class="bot bot-bl" viewBox="0 0 200 250" fill="none" aria-hidden="true">
+    <path d="M0 250C38 192,76 154,154 134c40-12,46-20,46-40" stroke="#7a9060" stroke-width="1" fill="none"/>
+    <ellipse cx="52" cy="190" rx="25" ry="11" fill="#4a5c3a" transform="rotate(42 52 190)"/>
+    <ellipse cx="90" cy="160" rx="19" ry="9"  fill="#5e7248" transform="rotate(26 90 160)"/>
+    <ellipse cx="38" cy="150" rx="17" ry="8"  fill="#4a5c3a" transform="rotate(57 38 150)"/>
+    <circle cx="56"  cy="204" r="3.5" fill="#c8b97a" opacity=".45"/>
+    <circle cx="106" cy="144" r="3"   fill="#c8b97a" opacity=".4"/>
   </svg>
 
   <div class="hero-inner">
     <p class="eyebrow">Together with their families</p>
     <h1 class="names">Anu<span class="amp">&amp;</span>Abe</h1>
     <div class="ornament">
-      <div class="ornament-line"></div>
-      <div class="ornament-diamond"></div>
-      <div class="ornament-line r"></div>
+      <div class="orn-l"></div><div class="orn-d"></div><div class="orn-r"></div>
     </div>
     <div class="hero-date">
-      <p class="hero-date-main">December 8, 2026</p>
-      <p class="hero-date-sub">Fontera Garden Suites &nbsp;·&nbsp; 2:00 PM</p>
+      <p class="date-main">December 8, 2026</p>
+      <p class="date-sub">Fontera Garden Suites &nbsp;&middot;&nbsp; 2:00 PM</p>
     </div>
     <div class="countdown" id="countdown">
-      <div class="cd-block"><div class="cd-num" id="cd-d">--</div><div class="cd-label">Days</div></div>
-      <div class="cd-block"><div class="cd-num" id="cd-h">--</div><div class="cd-label">Hours</div></div>
-      <div class="cd-block"><div class="cd-num" id="cd-m">--</div><div class="cd-label">Mins</div></div>
-      <div class="cd-block"><div class="cd-num" id="cd-s">--</div><div class="cd-label">Secs</div></div>
+      <div class="cd"><div class="cd-n" id="cd-d">--</div><div class="cd-l">Days</div></div>
+      <div class="cd"><div class="cd-n" id="cd-h">--</div><div class="cd-l">Hours</div></div>
+      <div class="cd"><div class="cd-n" id="cd-m">--</div><div class="cd-l">Mins</div></div>
+      <div class="cd"><div class="cd-n" id="cd-s">--</div><div class="cd-l">Secs</div></div>
     </div>
     <div class="hero-cta">
-      <a class="btn btn-primary" href="#rsvp">RSVP Now</a>
-      <button class="btn btn-ghost" onclick="saveDate()">Save the Date</button>
+      <a class="btn btn-fill" href="#rsvp">RSVP Now</a>
+      <button class="btn btn-outline" onclick="saveDate()">Save the Date</button>
     </div>
   </div>
-  <div class="scroll-cue">
+
+  <div class="scroll-cue" aria-hidden="true">
     <span>Scroll</span>
     <div class="scroll-line"></div>
   </div>
 </section>
 
+<!-- VERSE -->
 <section class="verse reveal">
-  <div class="section-rule"></div>
-  <p class="verse-text">"Two are better than one… Though one may be overpowered, two can defend themselves."</p>
-  <p class="verse-ref">Ecclesiastes 4 : 9–12</p>
+  <div class="s-rule"></div>
+  <p class="verse-text">&ldquo;Two are better than one&hellip; Though one may be overpowered, two can defend themselves.&rdquo;</p>
+  <p class="verse-ref">Ecclesiastes 4 : 9&ndash;12</p>
 </section>
 
+<!-- DETAILS -->
 <section class="details" id="details">
-  <div class="section-rule"></div>
-  <p class="section-title reveal">The Day's Details</p>
-  <div class="details-grid">
-    <div class="detail-card reveal">
-      <div class="detail-icon-wrap">
-        <svg class="detail-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <div class="s-rule"></div>
+  <p class="s-label reveal">The Day&rsquo;s Details</p>
+  <div class="d-grid">
+
+    <div class="d-card reveal">
+      <div class="d-ring">
+        <svg class="d-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
           <rect x="6" y="10" width="36" height="32" rx="2" stroke="#4a5c3a" stroke-width="1.5"/>
           <path d="M6 18h36" stroke="#4a5c3a" stroke-width="1.5"/>
           <path d="M16 6v8M32 6v8" stroke="#4a5c3a" stroke-width="1.5" stroke-linecap="round"/>
           <circle cx="24" cy="29" r="2.5" fill="#c8b97a"/>
         </svg>
       </div>
-      <span class="detail-label">Date</span>
-      <span class="detail-value">December 8, 2026</span>
-      <span class="detail-note">Tuesday</span>
+      <span class="d-lbl">Date</span>
+      <span class="d-val">December 8, 2026</span>
+      <span class="d-note">Tuesday</span>
     </div>
-    <div class="detail-card reveal">
-      <div class="detail-icon-wrap">
-        <svg class="detail-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+    <div class="d-card reveal">
+      <div class="d-ring">
+        <svg class="d-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
           <circle cx="24" cy="24" r="17" stroke="#4a5c3a" stroke-width="1.5"/>
           <path d="M24 13v11l7 4" stroke="#4a5c3a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </div>
-      <span class="detail-label">Time</span>
-      <span class="detail-value">2:00 PM</span>
-      <span class="detail-note">Ceremony begins promptly</span>
+      <span class="d-lbl">Time</span>
+      <span class="d-val">2:00 PM</span>
+      <span class="d-note">Ceremony begins promptly</span>
     </div>
-    <div class="detail-card reveal">
-      <div class="detail-icon-wrap">
-        <svg class="detail-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+    <div class="d-card reveal">
+      <div class="d-ring">
+        <svg class="d-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
           <path d="M24 6C17.4 6 12 11.4 12 18c0 10.5 12 24 12 24s12-13.5 12-24c0-6.6-5.4-12-12-12Z" stroke="#4a5c3a" stroke-width="1.5"/>
           <circle cx="24" cy="18" r="4" stroke="#c8b97a" stroke-width="1.5"/>
         </svg>
       </div>
-      <span class="detail-label">Venue</span>
-      <span class="detail-value">Fontera Garden Suites</span>
-      <span class="detail-note">Reception follows the ceremony</span>
+      <span class="d-lbl">Venue</span>
+      <span class="d-val">Fontera Garden Suites</span>
+      <span class="d-note">Reception follows the ceremony</span>
     </div>
-    <div class="detail-card reveal">
-      <div class="detail-icon-wrap">
-        <svg class="detail-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+    <div class="d-card reveal">
+      <div class="d-ring">
+        <svg class="d-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
           <path d="M17 8l-9 11h9v21h14V19h9L31 8c0 0-3 5-7 5s-7-5-7-5Z" stroke="#4a5c3a" stroke-width="1.5" stroke-linejoin="round"/>
           <path d="M22 13v4M26 13v4" stroke="#c8b97a" stroke-width="1" stroke-linecap="round"/>
         </svg>
       </div>
-      <span class="detail-label">Dress Code</span>
-      <span class="detail-value">Formal Attire</span>
-      <span class="detail-note">We'd love to see you dressed up</span>
+      <span class="d-lbl">Dress Code</span>
+      <span class="d-val">Formal Attire</span>
+      <span class="d-note">We&rsquo;d love to see you dressed up</span>
     </div>
+
   </div>
 </section>
 
-<section class="rsvp-section" id="rsvp">
-  <div class="section-rule"></div>
-  <h2 class="rsvp-heading reveal">Kindly Reply</h2>
+<!-- RSVP -->
+<section class="rsvp" id="rsvp">
+  <div class="s-rule"></div>
+  <h2 class="rsvp-head reveal">Kindly Reply</h2>
   <p class="rsvp-sub reveal">
-    Please RSVP by <strong style="color:var(--army);font-weight:400">November 1, 2026</strong> so we can celebrate with you.
+    Please RSVP by <strong>November 1, 2026</strong> so we can celebrate with you.
   </p>
-  <div class="policy-badge reveal">
-    <div class="policy-dot"></div>
-    <span class="policy-text">This invitation is for <strong>one (1) guest only</strong> — 1 Person, 1 Pass</span>
+  <div class="pass-badge reveal">
+    <div class="pass-dot"></div>
+    <span class="pass-txt">This invitation is for <strong>one (1) guest only</strong> &mdash; 1 Person, 1 Pass</span>
   </div>
   <div class="rsvp-card reveal">
-    <div class="rsvp-card-icon">
-      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="rsvp-icon" aria-hidden="true">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
         <rect x="2" y="6" width="24" height="16" rx="1.5" stroke="#fff" stroke-width="1.4"/>
         <path d="M2 7l12 9 12-9" stroke="#c8b97a" stroke-width="1.4" stroke-linecap="round"/>
       </svg>
     </div>
-    <div class="rsvp-card-heading">Will you be joining us?</div>
-    <p class="rsvp-card-body">Click the button below to open the RSVP form and let Anu &amp; Abe know if you'll be celebrating with them on their special day.</p>
-    <div class="pass-note">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;margin-top:2px" xmlns="http://www.w3.org/2000/svg">
+    <p class="rsvp-card-head">Will you be joining us?</p>
+    <p class="rsvp-card-body">
+      Click the button below to open the RSVP form and let Anu &amp; Abe know if you will be celebrating with them on their special day.
+    </p>
+    <div class="info-box" role="note">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;margin-top:2px" aria-hidden="true">
         <circle cx="12" cy="12" r="10" stroke="#4a5c3a" stroke-width="1.5"/>
         <path d="M12 8v4M12 16h.01" stroke="#4a5c3a" stroke-width="1.5" stroke-linecap="round"/>
       </svg>
-      <p>This is a <strong>personal invitation</strong>. Your RSVP covers you alone — kindly do not bring additional guests. Thank you for understanding.</p>
+      <p>This is a <strong>personal invitation</strong>. Your RSVP covers you alone &mdash; kindly do not bring additional guests. Thank you for your understanding.</p>
     </div>
-    <a class="btn-rsvp-google" href="https://forms.gle/AGPDteM3wepLPLMa6" target="_blank" rel="noopener">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <a class="btn-rsvp"
+       href="https://forms.gle/AGPDteM3wepLPLMa6"
+       target="_blank"
+       rel="noopener noreferrer">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
         <path d="M14 3h7v7M21 3L10 14M19 13v7H5V6h7" stroke="#c8b97a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
       Open RSVP Form
@@ -275,31 +280,58 @@
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
-  <div class="footer-monogram">Anu &amp; Abe</div>
-  <div class="footer-sub">December 8, 2026 &nbsp;·&nbsp; Fontera Garden Suites &nbsp;·&nbsp; 2:00 PM</div>
-  <div class="footer-rule"></div>
-  <div class="footer-quote">With love and gratitude, we look forward to sharing this day with you.</div>
+  <p class="ft-mono">Anu &amp; Abe</p>
+  <p class="ft-sub">December 8, 2026 &nbsp;&middot;&nbsp; Fontera Garden Suites &nbsp;&middot;&nbsp; 2:00 PM</p>
+  <div class="ft-rule"></div>
+  <p class="ft-quote">With love and gratitude, we look forward to sharing this day with you.</p>
 </footer>
 
 <script>
-  function updateCountdown(){
-    const target=new Date('2026-12-08T14:00:00'),now=new Date(),diff=target-now;
-    if(diff<=0){document.getElementById('countdown').innerHTML='<p style="font-family:Cormorant Garamond,serif;font-size:1.4rem;font-style:italic;color:var(--army)">Today is the day! 🎉</p>';return}
-    document.getElementById('cd-d').textContent=String(Math.floor(diff/86400000)).padStart(2,'0');
-    document.getElementById('cd-h').textContent=String(Math.floor((diff%86400000)/3600000)).padStart(2,'0');
-    document.getElementById('cd-m').textContent=String(Math.floor((diff%3600000)/60000)).padStart(2,'0');
-    document.getElementById('cd-s').textContent=String(Math.floor((diff%60000)/1000)).padStart(2,'0');
+  /* Countdown */
+  function tick() {
+    var diff = new Date('2026-12-08T14:00:00') - new Date();
+    if (diff <= 0) {
+      document.getElementById('countdown').innerHTML =
+        '<p style="font-family:Cormorant Garamond,serif;font-size:1.4rem;font-style:italic;color:#4a5c3a">Today is the day!</p>';
+      return;
+    }
+    function pad(n) { return String(Math.floor(n)).padStart(2, '0'); }
+    document.getElementById('cd-d').textContent = pad(diff / 86400000);
+    document.getElementById('cd-h').textContent = pad((diff % 86400000) / 3600000);
+    document.getElementById('cd-m').textContent = pad((diff % 3600000)  / 60000);
+    document.getElementById('cd-s').textContent = pad((diff % 60000)    / 1000);
   }
-  updateCountdown();setInterval(updateCountdown,1000);
+  tick();
+  setInterval(tick, 1000);
 
-  function saveDate(){
-    const ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//AbeAnu Wedding//EN','BEGIN:VEVENT','DTSTART:20261208T140000','DTEND:20261208T220000','SUMMARY:Wedding of Abe & Anu','DESCRIPTION:You are invited to celebrate the wedding of Abe and Anu.','LOCATION:Fontera Garden Suites','END:VEVENT','END:VCALENDAR'].join('\r\n');
-    const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([ics],{type:'text/calendar'}));a.download='Abe-Anu-Wedding.ics';a.click();
+  /* Save the Date (.ics) */
+  function saveDate() {
+    var ics = [
+      'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Anu & Abe Wedding//EN',
+      'BEGIN:VEVENT',
+      'DTSTART:20261208T140000', 'DTEND:20261208T220000',
+      'SUMMARY:Wedding of Anu & Abe',
+      'DESCRIPTION:You are invited to celebrate the wedding of Anu and Abe.',
+      'LOCATION:Fontera Garden Suites',
+      'END:VEVENT', 'END:VCALENDAR'
+    ].join('\r\n');
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([ics], { type: 'text/calendar' }));
+    a.download = 'Anu-Abe-Wedding.ics';
+    a.click();
+    URL.revokeObjectURL(a.href);
   }
 
-  const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}}),{threshold:0.12});
-  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+  /* Scroll reveal */
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(function(el) { io.observe(el); });
 </script>
+
 </body>
 </html>
